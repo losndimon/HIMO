@@ -13,6 +13,8 @@
     #PREVIEW
     #CONTACTS
     #SCROLLTOP
+    #FOOTER
+    #MQ
 */
 
 
@@ -32,6 +34,7 @@ body {
 
 .container {
     max-width: 1220px;
+    width: 100%;
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -293,4 +296,15 @@ p {
 
 .footer .logo {
     margin-bottom: 25px;
+}
+
+/* #MQ */
+@media (min-width: 480px) {
+
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none ;
+    }
 }
