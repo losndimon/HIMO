@@ -12,11 +12,16 @@
     #CHARACTERISTICS
     #PREVIEW
     #CONTACTS
+    #SCROLLTOP
 */
 
 
 
 /* #BASE */
+html {
+    scroll-behavior: smooth; /* Это делает прокрутку плавной */
+}
+
 body {
     font-family: "Inter", sans-serif;
     font-size: 14px;
@@ -252,6 +257,31 @@ p {
     border-bottom: 1px solid #ccc;
 }
 
+/* #SCROLLTOP */
+#scroll-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #131313;
+  opacity: 0.95;
+  display: none;
+  color: #fff;
+  transform: rotate(-90deg);
+  transition: all 0.3s ease-out;
+  z-index: 9999;
+}
+
+#scroll-top:hover {
+  background-color: #3b9b72;
+  opacity: 1;
+  transition: all 0.3s ease-out;
+}
 
 /* #FOOTER */
 .footer__inner {
